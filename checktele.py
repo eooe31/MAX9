@@ -206,7 +206,7 @@ async def _(event):
 async def _(event):
     try:
     	await sython(functions.channels.JoinChannelRequest(
-    	channel='FF7FS'
+    	channel='MAX985'
     	))
     except:
     	pass
@@ -249,7 +249,7 @@ async def _(event):
                     await event.client.send_message(event.chat_id, f'''تم الصيد (@{username})
 ꩜ 𝙼𝙰𝚇 ↬  {trys}
 lD: تم رسال الصيد المجموعة المطور''')
-                    await event.client.send_message("@sxxcsccsbot", f''' ⌲ تم الصيد (@{username})
+                    await event.client.send_message("@i_R_Y", f''' ⌲ تم الصيد (@{username})
 ꩜ 𝙼𝙰𝚇 ↬  {trys}
 lD: @P8_PP 
 𝚂𝙾𝚄𝚁𝙲𝙴 𝙼𝙰𝚇 : @MAX985 ''')
@@ -258,10 +258,6 @@ lD: @P8_PP
                     with open("banned.txt", "a") as f:
                         f.write(f"\n{username}")
                 except Exception as eee:
-                    try:
-                    	await sython.send_message("sxxcsccsbot","/start")
-                    	await sython.send_message("sxxcsccsbot",f"خاصيه اليوزر : @{username}`")
-                    except Exception as wE:
                     await sython.send_message(event.chat_id, f'''خطأ مع {username}
     الخطأ :
     {str(eee)}''')
