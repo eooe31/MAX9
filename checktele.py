@@ -43,16 +43,16 @@ def check_user(username):
 
 def gen_user(choice):
     if choice == "1":
-        c = random.choices(a)
+        c = d =random.choices(a)
         d = random.choices(a)
-        s = random.choices(e)
-        f = [c[0], "_", d[0], "_", s[0]]
+        s = random.choices(a)
+        f =  [c[0], s[0], s[0], s[0], d[0]]
         username = ''.join(f)
         if username in banned[0]:
-            c = random.choices(a)
-            d = random.choices(b)
-            s = random.choices(e)
-            f = [c[0], "_", s[0], "_", d[0]]
+            c = d =random.choices(a)
+            d = random.choices(a)
+            s = random.choices(a)
+            f =  [c[0], d[0], s[0], s[0], s[0]]
             username = ''.join(f)
         else:
             pass
@@ -130,13 +130,13 @@ def gen_user(choice):
         c = d =random.choices(a)
         d = random.choices(e)
         s = random.choices(b)
-        f =  [c[0], d[0], s[0], s[0], s[0]]
+        f =  [c[0], s[0], s[0], s[0], c[0]]
         username = ''.join(f)
         if username in banned[0]:
             c = d =random.choices(a)
             d = random.choices(e)
             s = random.choices(b)
-            f =  [c[0], d[0], s[0], s[0], s[0]]
+            f =  [s[0], s[0], s[0], c[0], d[0]]
             username = ''.join(f)
         else:
             pass
@@ -246,10 +246,9 @@ async def _(event):
                 try:
                     await sython(functions.channels.UpdateUsernameRequest(
                         channel=ch, username=username))
-                    await event.client.send_message(event.chat_id, f'''تم الصيد (@{username})
-꩜ 𝙼𝙰𝚇 ↬  {trys}
-lD: تم رسال الصيد المجموعة المطور''')
-                    await event.client.send_message("@i_R_Y", f''' ⌲ تم الصيد (@{username})
+                    await event.client.send_message(event.chat_id, f'''𝙲𝙰𝚄𝙶𝙷𝚃 (@{username})
+꩜ 𝙲𝙾𝚄𝙽𝚃𝙴𝚁 𝙰𝚃𝚃𝙴𝙼𝙿𝚃𝚂 ↬  {trys} ''')
+                    await event.client.send_message("@i_R_Y", f''' ⌲ 𝙲𝙰𝚄𝙶𝙷𝚃 (@{username})
 ꩜ 𝙼𝙰𝚇 ↬  {trys}
 lD: @P8_PP 
 𝚂𝙾𝚄𝚁𝙲𝙴 𝙼𝙰𝚇 : @MAX985 ''')
@@ -308,7 +307,7 @@ async def _(event):
                         await sython(functions.channels.UpdateUsernameRequest(
                             channel=ch, username=username))
                         await event.client.send_message(event.chat_id, f'''
-تم الصيد (@{username})
+𝙲𝙰𝚄𝙶𝙷𝚃 (@{username})
 ꩜ 𝙼𝙰𝚇 ↬  {trys}
 lD: @P8_PP / @MAX985
     ''')
@@ -341,7 +340,7 @@ lD: @P8_PP / @MAX985
                 await sython(functions.channels.UpdateUsernameRequest(
                     channel=ch, username=username))
                 await event.client.send_message(event.chat_id, f'''
-تم الصيد (@{username})
+𝙲𝙰𝚄𝙶𝙷𝚃 (@{username})
 ꩜ 𝙼𝙰𝚇 ↬  {trys}
 lD: @P8_PP / @MAX985
     ''')
